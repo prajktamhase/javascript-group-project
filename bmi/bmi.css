@@ -1,0 +1,17 @@
+.redtext{
+    color:red;
+    font-size: 30px;
+}
+.greentext{
+    color:rgb(35, 118, 24);
+    font-size: 30px;
+    font-weight: bold;
+}
+.bmidiv{
+    background-color: blueviolet;
+}
+.calculate-btn{
+    background-color: blueviolet !important;
+    color: white;
+   
+}
