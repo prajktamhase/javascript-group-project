@@ -1,0 +1,43 @@
+.img{
+    height: 300px;
+    margin-top: 10px;
+}
+
+
+
+.img:hover{
+    transform:scale(0,0);
+    transition: 4s;
+    animation-iteration-count: infinite;
+}
+
+.card1{
+    border: 0px solid rgb(68, 64, 64);
+   box-shadow: 0 0 1px 1px;
+   height: 550px;
+   width: 600px;
+}
+.index{
+  
+    display: flex;
+    flex-direction: row;
+}
+.text{
+    background-image: url(./background.jpg);
+    position: relative;
+    
+    mask-repeat: no-repeat;
+    height: 700px;
+    width: 100%;
+    z-index: 100px;
+    
+background-size: cover;
+text-align: center;
+position: absolute;
+font-size: 60px;
+color: white ;
+}
+
+
+    
+
