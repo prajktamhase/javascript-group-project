@@ -1,12 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Score Keeper</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+        <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
-    <h1>score</h1>
-    
+    <div class="container">
+        <h1>Update The Score of the Player</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam corrupti maiores reiciendis eligendi, rem,
+            voluptatibus iusto nesciunt eveniet deleniti iste unde ipsa beatae assumenda consequuntur aut dicta quos
+            modi sapiente?</p>
+    </div>
+    <div class="score-cards">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="./image/sport-news-with-camera-.avif" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Recent Score</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                                card's content.</p>
+                           
+                            <div class="score-btn d-flex justify-content-between">
+                                <a href="#" class=" btn-properties">Update Score</a>
+                                <button type="button" class=" btn-properties" onclick="decreaseScore('0')">-</button>
+                                <span id="score0" class=" btn-properties">1</span>
+                                <button type="button" class=" btn-properties" onclick="increaseScore('0')">+</button> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+        <script src="./js/score-keepe.js"></script>
 </body>
+
 </html>
