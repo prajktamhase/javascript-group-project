@@ -11,28 +11,122 @@
 </head>
 
 <body>
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-secondary text-center mb-4 py-3">
+        <div class="container ">
+          <a class="navbar-brand mx-sm-5 fw-bold" href="#" style="margin-right: 50px; color: blueviolet;">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item me-xxl-5">
+                <a class="nav-link active fw-bold" aria-current="page" href="#" style="margin: 0 50px; color: blueviolet; ">Score Keeper</a>
+    
+              </li>
+              <li class="nav-item me-xxl-5">
+                <a class="nav-link active fw-bold" aria-current="page" href="#" style="margin-right: 50px; color: blueviolet; ">Dice Roller</a>
+    
+              </li>
+              <li class="nav-item me-xxl-5">
+                <a class="nav-link active fw-bold" aria-current="page" href="#" style="margin-right: 50px; color: blueviolet; ">Bulb Toggler</a>
+    
+              </li>
+              <li class="nav-item me-xxl-5">
+                <a class="nav-link active fw-bold" aria-current="page" href="#" style="margin-right: 50px; color: blueviolet;">BMI Calculator</a>
+    
+              </li>
+              <li class="nav-item me-xxl-5">
+                <a class="nav-link active fw-bold" aria-current="page" href="#" style="margin-right: 50px; color: blueviolet; ">Product Cards</a>
+    
+              </li>
+    
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+
     <div class="container">
-        <h1>Update The Score of the Player</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam corrupti maiores reiciendis eligendi, rem,
-            voluptatibus iusto nesciunt eveniet deleniti iste unde ipsa beatae assumenda consequuntur aut dicta quos
-            modi sapiente?</p>
+        <h1 class="p-5 text-center" style="background-color: blueviolet; color: white;">Update The Score of the Player</h1>
+       <h3 class="text-center fw-bold">Livescore resources</h3> 
+        <p class="fs-5"> Flashscore.in provides the fastest live scores, standings and detailed stats. We cover thousands of competitions in 30+ sports. Click on the box to see today's games of the selected sport.</p>
     </div>
     <div class="score-cards">
         <div class="container">
             <div class="row">
                 <div class="col-md-3">
                     <div class="card">
-                        <img src="./image/sport-news-with-camera-.avif" class="card-img-top" alt="...">
+                        <div class="card-img">
+                        <img src="./image/cricket.jpg" class="card-img-top" alt="...">
+                        </div>
                         <div class="card-body">
-                            <h5 class="card-title">Recent Score</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                                card's content.</p>
+                            <h5 class="card-title">Recent Cricket Score</h5>
+                            <p class="card-text">Live cricket scores - IRE vs IND 2023 live scores, The Hundred 2023 Cricket</p>
                            
                             <div class="score-btn d-flex justify-content-between">
                                 <a href="#" class=" btn-properties">Update Score</a>
                                 <button type="button" class=" btn-properties" onclick="decreaseScore('0')">-</button>
                                 <span id="score0" class=" btn-properties">1</span>
                                 <button type="button" class=" btn-properties" onclick="increaseScore('0')">+</button> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="./image/football.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Recent Football Score</h5>
+                            <p class="card-text">Football Live Scores, Latest Football Results - ISL, I-League, EPLt.</p>
+                           
+                            <div class="score-btn d-flex justify-content-between">
+                                <a href="#" class=" btn-properties">Update Score</a>
+                                <button type="button" class=" btn-properties" onclick="decreaseScore('1')">-</button>
+                                <span id="score1" class=" btn-properties">1</span>
+                                <button type="button" class=" btn-properties" onclick="increaseScore('1')">+</button> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="./image/Badminton_-Scoring-System.jpg" class="card-img-top" alt="...">
+                        </div>
+                        
+                        <div class="card-body">
+                            <h5 class="card-title">Recent Badminton Score</h5>
+                            <p class="card-text">World Championships 2023, Badminton - fixtures, results.</p>
+                           
+                            <div class="score-btn d-flex justify-content-between">
+                                <a href="#" class=" btn-properties">Update Score</a>
+                                <button type="button" class=" btn-properties" onclick="decreaseScore('2')">-</button>
+                                <span id="score2" class=" btn-properties">1</span>
+                                <button type="button" class=" btn-properties" onclick="increaseScore('2')">+</button> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card">
+                        <div class="card-img">
+                        <img src="./image/tennis.webp" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Recent Tennis Score</h5>
+                            <p class="card-text">Tennis Live Scores, Tennis Results, Tennis Today, ATP, WTA .</p>
+                           
+                            <div class="score-btn d-flex justify-content-between">
+                                <a href="#" class=" btn-properties">Update Score</a>
+                                <button type="button" class=" btn-properties" onclick="decreaseScore('3')">-</button>
+                                <span id="score3" class=" btn-properties">1</span>
+                                <button type="button" class=" btn-properties" onclick="increaseScore('3')">+</button> 
                             </div>
                         </div>
                     </div>
