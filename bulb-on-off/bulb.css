@@ -10,4 +10,6 @@
     padding: 20px;
    background-color: white;
 }
-
+.bg-pink{
+    background-color: rgb(202, 16, 249) !important;
+}
