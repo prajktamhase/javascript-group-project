@@ -3,12 +3,165 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>BMI</title>
+    <link rel="stylesheet" href="bmi.css">
 </head>
 <body>
-    <h1>bmi
-        
-    </h1>
-    
+    <!doctype html>
+<html lang="en">
+  <head>
+   
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>BMIproject</title>
+  </head>
+  <body>
+    <div class="bmidiv p-3 mx-5 mt-4 rounded" >
+    <h1 class="text-light text-center display-2"><span><img src="./images/bmi.png" height="100px"></span> BMI calculator</h1>
+</div>
+
+<div class="container">
+    <div class="row">
+      <div class="col-md-4 mt-5">
+        <label class="fs-4">WEIGHT: (in kg) :</label>
+            <input type="text" id="weight"class="inputbox" placeholder="Enter the weight in kg"/><br><br>
+
+            <label class="fs-4">HEIGHT:(in cm) :</label>
+            <input type="text" id="height" class="inputbox" placeholder="Enter the height in cm"/><br><br>
+            <p id="ans" class="fs-4 fw-bold">BMI:</p>
+
+            <p id="condition" class="fs-4 fw-bold">RESULT:</p>
+           
+         <button type="button" onclick="calculate()" class="btn calculate-btn btn-lg px-4 text-light" >Calculate</button>
+         <button type="button" class="btn btn-danger btn-lg px-4 ms-5" onclick="reset()">Reset</button>
+      </div>
+
+
+
+      <div class="col-md-4">
+       <img src="./images/bmiimage.jpg" height="400px" width="300px" class="mt-3 rounded" id="bmi-image">
+      </div>
+      <div class="col-md-4">
+       <h4 class="text-center fs-3" id="tipsheading">Tips for maintaining good BMI</h4>
+       <p id="">
+        <ul class="fs-5"  id="tips">
+           <li> Eat good foods. Foods high in sugar and calories lead to weight gain if you are not careful. ...</li>
+        <li>Drink more water. Drinking water, along with eating good foods and exercising daily, can help you to maintain a healthy weight. ...</li>
+          <li>Exercise daily. ...</li>
+         <li>Get more sleep. ...</li>
+         <li>Make a goal and stick to it.</li>
+        </ul>
+       </p>
+       
+      </div>
+    </div>
+  </div>
+   
+<script>
+
+
+const weight =parseFloat (document.getElementById('weight').value);
+  const height=parseFloat( document.getElementById('height').value);
+  const conditionB = document.getElementById('condition');
+  const bmi_img= document.getElementById('bmi-image');
+  const tip = document.getElementById('tipsheading');
+  const tiptext = document.getElementById('tips');
+
+function calculate()
+{
+    const weight =parseFloat (document.getElementById('weight').value);
+  const height=parseFloat( document.getElementById('height').value);
+  const conditionB = document.getElementById('condition');
+  const bmi_img= document.getElementById('bmi-image');
+  const tip = document.getElementById('tipsheading');
+  const tiptext = document.getElementById('tips');
+  
+
+
+const heightM=height/100;
+
+const bmi= (weight /(heightM * heightM)).toFixed(2);
+
+document.getElementById('ans').innerText=`BMI : ${bmi}`;
+
+if(bmi <=18)
+{
+ conditionB.innerText='Result :Underweight';
+ conditionB.className='redtext';
+ bmi_img.src='./images/underweightperson.jpg'
+ tip.innerText='Please follow the following tip to grow your BMI..'
+ tiptext.innerText=`To gain weight your body needs to take in more calories than it burns. Eating more calories will help increases weight, which increases BMI. It is easier to figure out how to lose weight than it is to gain weight. Everyone's bodies are different and factors such as genetics come into play.`
+
+
+}
+else if(bmi>= 18 && bmi <=24)
+{
+ conditionB.innerText='  Result: Normal';
+ conditionB.className='greentext'
+ bmi_img.src='./images/healty person.jpg'
+ tip.innerText='Please follow the following tip to grow your BMI..'
+ tiptext.innerText=`To gain weight your body needs to take in more calories than it burns. Eating more calories will help increases weight, which increases BMI. It is easier to figure out how to lose weight than it is to gain weight. Everyone's bodies are different and factors such as genetics come into play.`
+}
+else if(bmi>=25 && bmi <=30)
+{
+ conditionB.innerText='  Result: Overweight';
+ bmi_img.src='./images/overweight1.jpg'
+ tip.innerText='Please follow the following tip to grow your BMI..'
+ tiptext.innerText=`One of the best ways to lose body fat is through steady aerobic exercise — such as brisk walking — for at least 30 minutes most days of the week. Some people may require more physical activity than this to lose weight and maintain that weight loss. Any extra movement helps burn calories.`
+}
+
+else if(bmi > 30 )
+{
+ conditionB.innerText='  Result: obese';
+ bmi_img.src='./images/obeseperson.avif';
+ tip.innerText='Please follow the following tip to grow your BMI..'
+ tiptext.innerText=`Choosing healthier foods (whole grains, fruits and vegetables, healthy fats and protein sources) and beverages. Limiting unhealthy foods (refined grains and sweets, potatoes, red meat, processed meat) and beverages (sugary drinks) Increasing physical activity.`
+}
+}
+
+
+function reset()
+{
+    const weight=document.getElementById('weight');
+    const height=document.getElementById('height');
+    const bmi=document.getElementById('ans')
+    weight.value='';
+   height.value='';
+  conditionB.innerText='Result:';
+  bmi.innerText='BMI:'
+  bmi_img.src='images/bmiimage.jpg';
+
+ 
+
+}
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+   
+  </body>
+</html>
 </body>
 </html>
