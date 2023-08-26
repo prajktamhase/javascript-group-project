@@ -5,5 +5,5 @@ Prajkta mhase<br/>
 Shweta Pund<br/>
 sonali<br/>
 dattatray pund
-<img src="screenshot(220)"/>
+<img src="./screenshot(220)"/>
 <img src="screenshot(221)"/>
