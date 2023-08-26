@@ -1,0 +1,15 @@
+
+.main-body{
+    background-color:rgb(230, 209, 251); 
+}
+.card-light{
+    border: 2px solid blueviolet;
+   
+    border-radius: 10px;
+    box-shadow: 0px 0px 3px 4px lightyellow;
+    padding: 20px;
+   background-color: white;
+}
+.bg-pink{
+    background-color: rgb(202, 16, 249) !important;
+}
