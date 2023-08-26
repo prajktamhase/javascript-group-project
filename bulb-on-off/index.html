@@ -14,49 +14,52 @@
     <div class="d-block mx-auto mb-2">
         <h1 class="text-center">Magical Bulb</h1>
     </div>
+    <div class="row">
+        <div class="card-light d-block mx-auto mt-2 col-md-6 col-sm-6">
+            <img src="./images/off.png" id="bulb" height="300px" class="d-block mx-auto" />
 
-    <div class="card-light d-block mx-auto mt-2">
-        <img src="./images/off.png" id="bulb" height="300px" class="d-block mx-auto" />
+            <div class="d-flex justify-content-evenly mt-2">
+                <button onclick="lightOn()" class="fs-3 px-4 ms-5  btn bg-warning me-4">ON</button>
+                <button onclick="lightOff()" class="fs-3 px-4 ms-5 bg-dark btn btn-dark me-5">OFF</button>
+            </div>
 
-        <div class="d-flex justify-content-evenly mt-2">
-            <button onclick="lightOn()" class="fs-3 px-4 ms-5  btn bg-warning me-4">ON</button>
-            <button onclick="lightOff()" class="fs-3 px-4 ms-5 bg-dark btn btn-dark me-5">OFF</button>
         </div>
-
     </div>
 
-    <h3 class="text-center mt-3">Different Colors</h3><br/>
-<div class="d-flex justify-content-evenly">
-    <button onclick="lightGreen()" class="fs-3 px-4 ms-5  btn btn-success">Green</button>
-    <button onclick="lightRed()" class="fs-3 px-4 ms-5  btn btn-danger">Red</button>
-    <button onclick="lightPink()" class="fs-3 px-4 ms-5  btn bg-pink">Pink</button>
-    <button onclick="lightSkyBlue()" class="fs-3 px-4 ms-5  btn btn-info">SkyBlue</button>
+    <h3 class="text-center mt-3">Different Colors</h3><br />
+    <div class="row">
+    <div class="d-flex justify-content-evenly">
+        <button onclick="lightGreen()" class="fs-3 px-4 ms-5  btn btn-success">Green</button>
+        <button onclick="lightRed()" class="fs-3 px-4 ms-5  btn btn-danger">Red</button>
+        <button onclick="lightPink()" class="fs-3 px-4 ms-5  btn bg-pink">Pink</button>
+        <button onclick="lightSkyBlue()" class="fs-3 px-4 ms-5  btn btn-info">SkyBlue</button>
+    </div>
 </div>
 
-<script>
-    const changeLightcolr = document.getElementById("bulb");
+    <script>
+        const changeLightcolr = document.getElementById("bulb");
 
-    function lightOn() {
-        changeLightcolr.src = "./images/on.png";
-    }
-    function lightOff() {
-        changeLightcolr.src = "./images/off.png";
-    }
-    function lightGreen() {
-        changeLightcolr.src = "./images/green-light.png";
-    }
-    function lightRed() {
-        changeLightcolr.src = "./images/red-light.png";
-    }
-    function lightPink() {
-        changeLightcolr.src = "./images/pink-light.png";
-    }
-    function lightSkyBlue() {
-        changeLightcolr.src = "./images/sky-blue-light.png";
-    }
+        function lightOn() {
+            changeLightcolr.src = "./images/on.png";
+        }
+        function lightOff() {
+            changeLightcolr.src = "./images/off.png";
+        }
+        function lightGreen() {
+            changeLightcolr.src = "./images/green-light.png";
+        }
+        function lightRed() {
+            changeLightcolr.src = "./images/red-light.png";
+        }
+        function lightPink() {
+            changeLightcolr.src = "./images/pink-light.png";
+        }
+        function lightSkyBlue() {
+            changeLightcolr.src = "./images/sky-blue-light.png";
+        }
 
 
-</script>
+    </script>
 
 
 
