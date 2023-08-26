@@ -1,12 +1,83 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+   <link rel="stylesheet" href="./product.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 </head>
+
 <body>
-    <h1>product</h1>
+    <nav class="navbar navbar-expand-lg bg-body-secondary text-center mb-4 py-3">
+        <div class="container ">
+          <a class="navbar-brand mx-sm-5 fw-bold" href="#" style="margin-right: 50px; color: blueviolet;">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item me-xxl-5">
+                <a class="nav-link active fw-bold" aria-current="page" href="#" style="margin: 0 50px; color: blueviolet; ">Score Keeper</a>
     
+              </li>
+              <li class="nav-item me-xxl-5">
+                <a class="nav-link active fw-bold" aria-current="page" href="#" style="margin-right: 50px; color: blueviolet; ">Dice Roller</a>
+    
+              </li>
+              <li class="nav-item me-xxl-5">
+                <a class="nav-link active fw-bold" aria-current="page" href="#" style="margin-right: 50px; color: blueviolet; ">Bulb Toggler</a>
+    
+              </li>
+              <li class="nav-item me-xxl-5">
+                <a class="nav-link active fw-bold" aria-current="page" href="#" style="margin-right: 50px; color: blueviolet;">BMI Calculator</a>
+    
+              </li>
+              <li class="nav-item me-xxl-5">
+                <a class="nav-link active fw-bold" aria-current="page" href="#" style="margin-right: 50px; color: blueviolet; ">Product Cards</a>
+    
+              </li>
+    
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+<div class="d-flex justify-content-center mt-5 car">
+    <div class=" m-2 p-2 card1" style="width: 400px;">
+
+        <img src="./car.avif" id="car" class="card-img-top img" alt="..." >
+        <div class="card-body">
+          <h5 class="card-title mt-5 d-flex justify-content-center fs-2">Car Model</h5>
+          <div class="d-flex justify-content-center">
+          
+          <a href="#" class="btn btn-danger fs-5 m-3 " onClick="frontview()">Front view</a>
+          <a href="#" class="btn btn-danger fs-5 m-3" onClick=" sidetview()">Side view</a>
+          <a href="#" class="btn btn-danger fs-5 m-3" onClick="backview()">Back View</a>
+        </div>
+        </div>
+      </div>
+      </div>
+
+      <script>
+        const bulbElement = document.getElementById('car');
+        function frontview() {
+            bulbElement.src = "./car.avif";
+        }
+        function sidetview() {
+            bulbElement.src = "./side-car.avif";
+        }
+        function backview() {
+            bulbElement.src = "back-car.jpg";
+        }
+
+
+      </script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>

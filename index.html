@@ -1,12 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./product-galary/product.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 </head>
+
 <body>
-    <h1>home</h1>
     
+    <nav class="navbar navbar-expand-lg bg-body-secondary text-center mb-4 py-3">
+        <div class="container ">
+          <a class="navbar-brand mx-sm-5 fw-bold" href="#" style="margin-right: 50px; color: blueviolet;">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item me-xxl-5">
+                <a class="nav-link active fw-bold" aria-current="page" href="#" style="margin: 0 50px; color: blueviolet; ">Score Keeper</a>
+    
+              </li>
+              <li class="nav-item me-xxl-5">
+                <a class="nav-link active fw-bold" aria-current="page" href="#" style="margin-right: 50px; color: blueviolet; ">Dice Roller</a>
+    
+              </li>
+              <li class="nav-item me-xxl-5">
+                <a class="nav-link active fw-bold" aria-current="page" href="#" style="margin-right: 50px; color: blueviolet; ">Bulb Toggler</a>
+    
+              </li>
+              <li class="nav-item me-xxl-5">
+                <a class="nav-link active fw-bold" aria-current="page" href="#" style="margin-right: 50px; color: blueviolet;">BMI Calculator</a>
+    
+              </li>
+              <li class="nav-item me-xxl-5">
+                <a class="nav-link active fw-bold" aria-current="page" href="#" style="margin-right: 50px; color: blueviolet; ">Product Cards</a>
+    
+              </li>
+    
+            </ul>
+          </div>
+        </div>
+      </nav>
+    
+    <div>
+        
+        
+        <h1 class="text">java Project</h1>
+   
+    </div>
+    
+              
+
+
+    <div class="d-flex justify-content-evenly">
+        <div class=" mt-5 car col-md-3 ">
+            <div class=" m-2 p-2 card1" style="width: 400px;">
+
+                <img src="./product-galary/dice.jpg" id="car" class="card-img-top" height="350px" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title mt-3 d-flex justify-content-center fs-2">Dice Roller</h5>
+                    <h5 class="d-flex justify-content-center">Dattatray Tupe</h5>
+                    <div class="d-flex justify-content-center">
+
+                        <a href="./dice-roller/index.html" class="btn btn-danger fs-5 m-3 " onClick="frontview()">See live</a>
+                        <a href="https://github.com/prajktamhase/javascript-group-project" class="btn btn-danger fs-5 m-3" onClick=" sidetview()">Github</a>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="d-flex justify-content-center mt-5 car col-md-3 ">
+            <div class=" m-2 p-2 card1" style="width: 400px;">
+
+                <img src="./product-galary/bulb.jpg" id="car" height=350px; class="card-img-top " alt="...">
+                <div class="card-body">
+                    <h5 class="card-title mt-3 d-flex justify-content-center fs-2">Bulb-on-off</h5>
+                    <h5 class="d-flex justify-content-center">Shweta Pund</h5>
+                    <div class="d-flex justify-content-center">
+
+                        <a href="./bulb-on-off/index.html" class="btn btn-danger fs-5 m-3 " onClick="frontview()">See live</a>
+                        <a href="https://github.com/prajktamhase/javascript-group-project" class="btn btn-danger fs-5 m-3" onClick=" sidetview()">Github</a>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="d-flex justify-content-center mt-5 car col-md-3 ">
+            <div class=" m-2 p-2 card1" style="width: 400px;">
+
+                <img src="./product-galary/car.avif" id="car" height="350px" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title mt-3 d-flex justify-content-center fs-2"> Product Galary </h5>
+                    <h5 class="d-flex justify-content-center">Prajkta Mhase</h5>
+                    <div class="d-flex justify-content-center">
+
+                        <a href="./product-galary/index.html" class="btn btn-danger fs-5 m-3 " onClick="frontview()">See live</a>
+                        <a href="https://github.com/prajktamhase/javascript-group-project" class="btn btn-danger fs-5 m-3" onClick=" sidetview()">Github</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="d-flex justify-content-evenly">
+
+        <div class="mt-5 car">
+            <div class=" m-2 p-2 card1" style="width: 400px;">
+
+                <img src="./product-galary/sport.avif" id="car" height="300px" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title mt-5 d-flex justify-content-center fs-2">score Keeper</h5>
+                    <h5 class="d-flex justify-content-center">Harshali Kanoje</h5>
+                    <div class="d-flex justify-content-center">
+                        <a href="./score-keeper/index.html" class="btn btn-danger fs-5 m-3 " onClick="frontview()">See live</a>
+                        <a href="https://github.com/prajktamhase/javascript-group-project" class="btn btn-danger fs-5 m-3" onClick=" sidetview()">Github</a>
+
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-5 car ">
+            <div class=" m-2 p-2 card1" style="width: 400px;">
+
+                <img src="./product-galary/bmi.jpg" id="car" height="300px" class="card-img-top " alt="...">
+                <div class="card-body">
+                    <h5 class="card-title mt-5 d-flex justify-content-center fs-2">BMI Calculate</h5>
+                    <h5 class="d-flex justify-content-center">Gayatri </h5>
+
+                    <div class="d-flex justify-content-center">
+
+                         <a href="./bmi/index.html" class="btn btn-danger fs-5 m-3 " onClick="frontview()">See live</a>
+                        <a href="https://github.com/prajktamhase/javascript-group-project" class="btn btn-danger fs-5 m-3" onClick=" sidetview()">Github</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
 </body>
+
 </html>
