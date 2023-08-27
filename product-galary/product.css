@@ -1,7 +1,13 @@
 .bg-color{
     background-color: rgb(230, 209, 251);
 }
-
+.button-color{
+    background-color: rgb(118, 21, 209);
+    color: white;
+    text-decoration: none;
+    margin: 5px;
+    padding: 5px;
+}
 
 
 
@@ -12,11 +18,11 @@
 
 
 
-.img:hover{
+/* .img:hover{
     transform:scale(0,0);
     transition: 4s;
     animation-iteration-count: infinite;
-}
+} */
 
 .card1{
     border: 0px solid rgb(68, 64, 64);
@@ -30,8 +36,7 @@
     flex-direction: row;
 }
 .text{
-    background-image: url(./background.jpg);
-     mask-repeat: no-repeat;
+   
     height: 700px;
     width: 100%;
     z-index: 100px;
@@ -53,6 +58,47 @@ left: 300px;
 
 
 }
+
+
+
+
+/* animation */
+
+.content {
+    margin: 0;
+    padding: 0;
+    animation: effect 3s linear infinite;
+}
+
+section {
+    width: 100%;
+    height: 100vh;
+}
+
+.position {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3em;
+}
+
+
+
+@keyframes effect {
+    0% {
+        background: linear-gradient(#c8a766, #81fa81);
+    }
+
+    50% {
+        background: linear-gradient(#9882d6, #1072cf);
+    }
+
+    100% {
+        background: linear-gradient(#efb279, #df5017);
+    }
+}
+
 
 
 
