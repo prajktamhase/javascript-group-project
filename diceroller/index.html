@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Dice roller</title>
+    <link rel="stylesheet" href="dice.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- nav bar start -->
+    <nav class="navbar navbar-expand-lg bg-body-secondary text-center mb-4 py-3">
+        <div class="container ">
+            <a class="navbar-brand mx-sm-5 fw-bold" href="#" style="margin-right: 50px; color: blueviolet;">content</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item me-xxl-5">
+                        <a class="nav-link active fw-bold" aria-current="page" href="./score-keeper/index.html"
+                            style="margin: 0 50px; color: blueviolet; ">Score Keeper</a>
+
+                    </li>
+                    <li class="nav-item me-xxl-5">
+                        <a class="nav-link active fw-bold" aria-current="page" href="./dice-roller/index.html"
+                            style="margin-right: 50px; color: blueviolet; ">Dice Roller</a>
+
+                    </li>
+                    <li class="nav-item me-xxl-5">
+                        <a class="nav-link active fw-bold" aria-current="page" href="./bmi/index.html"
+                            style="margin-right: 50px; color: blueviolet; ">BMI Calculator</a>
+
+                    </li>
+                    <li class="nav-item me-xxl-5">
+                        <a class="nav-link active fw-bold" aria-current="page" href="./bulb-on-off/index.html"
+                            style="margin-right: 50px; color: blueviolet;">Bulb Toggler</a>
+
+                    </li>
+                    <li class="nav-item me-xxl-5">
+                        <a class="nav-link active fw-bold" aria-current="page" href="./product-galary/index.html"
+                            style="margin-right: 50px; color: blueviolet; ">Product Cards</a>
+
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- nav bar end -->
+
+    <div class="card-text">
+        <h1> Dice Roller</h1>
+    </div>
+
+    <div class="contener">
+        <div class="roll-card-1 roll-center border-color">
+            <img src="./img/dice-casino.png" id="diceimgchenges" style="height: 220px;" class="img-margin">
+        </div>
+        <div class="roll-card-2 roll-center border-color">
+            <img src="./img/dice-casino.png" id="diceimgchenges2" style="height: 220px;" class="img-margin">
+        </div>
+    </div>
+
+    <div class="contener">
+        <div>
+            <button type="button" onclick="diceroller() " class="btn-onclick button-bg">
+                Roller</button>
+        </div>
+        <div>
+            <button type="button" onclick="diceroller2()" class="btn-onclick button-bg "
+                onmouseover="circle">Roller</button>
+        </div>
+    </div>
+
+    <div class="btn-rollboth">
+        <button type="button " onclick="Rollboth()" class="button-bg">
+            Roll Both</button>
+    </div>
+
+
+    <script>
+        const diceimg = document.getElementById("diceimgchenges");
+        const diceimg2 = document.getElementById("diceimgchenges2");
+        const diceimg3 = document.getElementById("Rollboth");
+        function diceroller() {
+            const max = 7;
+            const min = 1;
+            diceimg.className = 'circle img-hight';
+            const randnumber = Math.floor(Math.random() * (max - min)) + min;
+
+            if (randnumber == 1) {
+                diceimg.src = "./img/dice-1.png";
+
+            }
+            else if (randnumber == 2) {
+                diceimg.src = "./img/dice-2.png";
+            }
+            else if (randnumber == 3) {
+                diceimg.src = "./img/dice-3.png";
+            }
+            else if (randnumber == 4) {
+                diceimg.src = "./img/dice-4.png";
+            }
+            else if (randnumber == 5) {
+                diceimg.src = "./img/dice-5.png";
+            }
+            else {
+                diceimg.src = "./img/dice-6.png";
+            }
+        }
+        function diceroller2() {
+            const max = 7;
+            const min = 1;
+            diceimg2.className = 'circle img-hight';
+            const randnumber = Math.floor(Math.random() * (max - min)) + min;
+            console.log(randnumber);
+            if (randnumber == 1) {
+                diceimg2.src = "./img/dice-1.png";
+            }
+            else if (randnumber == 2) {
+                diceimg2.src = "./img/dice-2.png";
+            }
+            else if (randnumber == 3) {
+                diceimg2.src = "./img/dice-3.png";
+            }
+            else if (randnumber == 4) {
+                diceimg2.src = "./img/dice-4.png";
+            }
+            else if (randnumber == 5) {
+                diceimg2.src = "./img/dice-5.png";
+            }
+            else {
+                diceimg2.src = "./img/dice-6.png";
+            }
+        }
+
+        function Rollboth() {
+            const max = 7;
+            const min = 1;
+            diceimg2.className = 'circle img-hight';
+            diceimg.className = 'circle img-hight';
+            const randnumber = Math.floor(Math.random() * (max - min)) + min;
+            console.log(randnumber);
+            if (randnumber == 1) {
+                diceimg.src = "./img/dice-1.png";
+                diceimg2.src = "./img/dice-6.png";
+            }
+            else if (randnumber == 2) {
+                diceimg.src = "./img/dice-2.png";
+                diceimg2.src = "./img/dice-5.png";
+
+            }
+            else if (randnumber == 3) {
+                diceimg.src = "./img/dice-3.png";
+                diceimg2.src = "./img/dice-4.png";
+            }
+            else if (randnumber == 4) {
+                diceimg.src = "./img/dice-4.png";
+                diceimg2.src = "./img/dice-3.png";
+            }
+            else if (randnumber == 5) {
+                diceimg.src = "./img/dice-5.png";
+                diceimg2.src = "./img/dice-2.png";
+            }
+            else {
+                diceimg.src = "./img/dice-6.png";
+                diceimg2.src = "./img/dice-1.png";
+            }
+        }
+    </script>
+
+
+    <!-- footer -->
+    <footer class="button-color mt-5">
+        <div class="container text-light col-md-6">
+            <div class="row">
+                <div class="  col-md-8 ">
+                    <a href="./index.html" style="text-decoration: none; display:block; color: white;">Home</a>
+                    <a href="./dice-roller/index.html" style="text-decoration: none; display:block; color: white;">Dice
+                        roller</a>
+                    <a href="./bulb-on-off/index.html" style="text-decoration: none; display:block; color: white;">Bulb
+                        Toggler</a>
+                    <a href="./bmi/index.html" style="text-decoration: none; display:block; color: white;">BMI
+                        Calculator</a>
+                    <a href="./product-galary/index.html"
+                        style="text-decoration: none; display:block; color: white;">Product Galary</a>
+                    <a href="./score-keeper/index.html"
+                        style="text-decoration: none; display:block; color: white;">Score keeper</a>
+                </div>
+                <div class=" col-md-4">
+                    <h5 class=" fs-4">Contact Us</h5>
+                    <pre><a href="tel:+919373814613" style="text-decoration: none; display:block; color: white; "><i class="fa-solid fa-phone-volume fs-2"></i> +918262945593</a></pre>
+                    <a href="mailto:prajaktamhase8@gmail.com"
+                        style="text-decoration: none; display:block; color: white;"><i
+                            class="fa-solid fa-envelope "></i>
+                        prajaktamhase8@gmail.com</a>
+                    <br>
+                </div>
+                <div>
+    </footer>
+<!-- footer end -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

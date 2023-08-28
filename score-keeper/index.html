@@ -8,7 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
         <link rel="stylesheet" href="./css/style.css">
-        <link rel="stylesheet" href="./product-galary/product.css" />
+        <link rel="stylesheet" href="./../product-galary/product.css">
 </head>
 
 <body>
@@ -51,100 +51,57 @@
 
 
     <div class="container">
-        <h1 class="p-5 text-center" style="background-color: blueviolet; color: white;">Update The Score of the Player</h1>
+        <h1 class="p-5 text-center" style="background-color: blueviolet; color: white;">Update The Score of the Tennis Player</h1>
        <h3 class="text-center fw-bold">Livescore resources</h3> 
-        <p class="fs-5"> Flashscore.in provides the fastest live scores, standings and detailed stats. We cover thousands of competitions in 30+ sports. Click on the box to see today's games of the selected sport.</p>
+        <p class="fs-5"> U14 boys and girls tennis teams leave for India ... The ITF ASIA Development Championship is set to kick off today in Bhubaneshwar, India.</p>
     </div>
-    <div class="score-cards">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3 col-sm-6 height">
-                    <div class="card w-100 h-100">
-                        
-                        <img src="./image/cricket.jpg" class="card-img-top h-50 w-100 img-fluid" alt="...">
-                       
-                        <div class="card-body">
-                            <h5 class="card-title">Recent Cricket Score</h5>
-                            <p class="card-text">Live cricket scores - IRE vs IND 2023 live scores, The Hundred 2023 Cricket</p>
-                           
-                            <div class="score-btn d-flex justify-content-between">
-                                <a href="#" class=" btn-properties">Update Score</a>
-                                <button type="button" class=" btn-properties" onclick="decreaseScore('0')">-</button>
-                                <span id="score0" class=" btn-properties">1</span>
-                                <button type="button" class=" btn-properties" onclick="increaseScore('0')">+</button> 
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-3 col-sm-6 height" >
-                    <div class="card w-100 h-100">
-                        <img src="./image/football.jpg" class="card-img-top img-fluid" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Recent Football Score</h5>
-                            <p class="card-text">Football Live Scores, Latest Football Results - ISL, I-League, EPLt.</p>
-                           
-                            <div class="score-btn d-flex justify-content-between">
-                                <a href="#" class=" btn-properties">Update Score</a>
-                                <button type="button" class=" btn-properties" onclick="decreaseScore('1')">-</button>
-                                <span id="score1" class=" btn-properties">1</span>
-                                <button type="button" class=" btn-properties" onclick="increaseScore('1')">+</button> 
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-3 col-sm-6 height mb-3 mb-sm-0">
-                    <div class="card w-100 h-100">
-                       
-                            <img src="./image/Badminton_-Scoring-System.jpg" class="card-img-top h-50 img-fluid" alt="...">
-                        
-                        
-                        <div class="card-body">
-                            <h5 class="card-title">Recent Badminton Score</h5>
-                            <p class="card-text">World Championships 2023, Badminton - fixtures, results.</p>
-                           
-                            <div class="score-btn d-flex justify-content-between">
-                                <a href="#" class=" btn-properties">Update Score</a>
-                                <button type="button" class=" btn-properties" onclick="decreaseScore('2')">-</button>
-                                <span id="score2" class=" btn-properties">1</span>
-                                <button type="button" class=" btn-properties" onclick="increaseScore('2')">+</button> 
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3  col-sm-6 mb-3 height">
-                  <div class="card w-100 h-100">
-                     
-                          <img src="./image/tennis.webp" class="card-img-top h-50 img-fluid" alt="...">
-                      
-                      
-                      <div class="card-body">
-                          <h5 class="card-title">Recent tennis Score</h5>
-                          <p class="card-text">Tennis Live Scores, Tennis Results, Tennis Today, ATP, WTA .</p>
-                         
-                          <div class="score-btn d-flex justify-content-between">
-                              <a href="#" class=" btn-properties">Update Score</a>
-                              <button type="button" class=" btn-properties" onclick="decreaseScore('3')">-</button>
-                              <span id="score2" class=" btn-properties">1</span>
-                              <button type="button" class=" btn-properties" onclick="increaseScore('3')">+</button> 
-                          </div>
+    <div class="container">
+      <div class="row">
+          <div class="col-sm-4">
+              <div class="card">
+                  <h5 class="card-title text-center heading" style="font-size: 40px;">Girls Player</h5>
+                  <img src="./image/paralympic table tennis-rafiki.svg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                      <h5 class="card-title text-center" style="font-size: 40px;">Update Score</h5>
+                      <div class="update-btn text-center">
+                          <button type="button" onclick="decreaseScore('0')">-</button>
+                          <button type="button" id="score0">1</button>
+                          <button type="button" onclick="increaseScore('0')">+</button>
                       </div>
+
                   </div>
               </div>
-            </div>
-        </div>
-        
-    </div>
+          </div>
+          <div class="col-sm-4 team-vs ">
+              <h1 class="text-center">V/S</h1>
+          </div>
+          <div class="col-sm-4">
+              <div class="card">
+                  <h5 class="card-title text-center heading" style="font-size: 40px;">Boys Player</h5>
+                  <img src="./image/paralympic table tennis-pana.svg " class="card-img-top" alt="...">
+                  <div class="card-body">
+                      <h5 class="card-title text-center" style="font-size: 40px;">Update Score</h5>
+                      <div class="update-btn text-center">
+                          <button type="button" onclick="decreaseScore('1')">-</button>
+                          <button type="button" id="score1">1</button>
+                          <button type="button" onclick="increaseScore('1')">+</button>
+                      </div>
 
-    <!-- <footer class="button-color mt-5">
+                  </div>
+              </div>
+          </div>
+
+      </div>
+  </div>
+
+    <footer class="button-color mt-5">
         <div class="container text-light col-md-6">
-          <h1 class="text-center">Welcome To Our JavaScript Projects...!</h1><br/>
+
           <div class="row">
     
             <div class="  col-md-8 ">
               <!-- <h5 class=" fs-4">JavaScript Projects </h5> -->
-              <!-- <a href="./index.html" style="text-decoration: none; display:block; color: white;">Home</a>
+               <a href="./index.html" style="text-decoration: none; display:block; color: white;">Home</a> 
               <a href="./dice-roller/index.html" style="text-decoration: none; display:block; color: white;">Dice 
             roller</a>
               <a href="./bulb-on-off/index.html" style="text-decoration: none; display:block; color: white;">Bulb Toggler</a>
@@ -159,14 +116,10 @@
               <a href="mailto:prajaktamhase8@gmail.com" style="text-decoration: none; display:block; color: white;"><i
                   class="fa-solid fa-envelope "></i>
                 prajaktamhase8@gmail.com</a>
-              <br> -->
-              <!-- <input type="tel"> -->
-              <!-- <span>Click to know our team</span><br>
-              <a href="./pages/aboutus.html" style="text-decoration: none; display:block; color: white;">About Us</a>
-            </div> -->
-          <!-- </div>
+              <br> 
+          </div>
           <div>
-      </footer>  -->
+      </footer> 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
