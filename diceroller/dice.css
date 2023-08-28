@@ -7,15 +7,11 @@
 .card-text {
     text-align: center;
     color: rgb(118, 21, 209);
+    margin-bottom: 100px;
 
 
 }
 
-.contener {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 60px;
-}
 
 .btn-rollboth {
     display: flex;
@@ -30,16 +26,39 @@
     padding: 15px;
     border-radius: 20px;
     box-shadow: 0px 0px 10px 0.5px black;
-    height: 300px;
-    width: 300px;
+
+
+
+}
+
+.col-btn {
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card-box {
+    height: 400px;
+    width: 300px !important;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+
 
 }
 
 .btn-onclick {
-    margin-top: 50px;
+    padding-top: 10px;
+    position: absolute;
+    left: 115px;
+    right: auto;
+    top: 330px;
+
+
 }
 
-#diceimgchenges {
+/* #diceimgchenges {
     transition: 1s;
 }
 
@@ -53,11 +72,12 @@
 
 #diceimgchenges2:hover {
     transform: rotate(220deg);
-}
+} */
 
 .img-margin {
 
     padding-top: 15px;
+    margin-bottom: 80px;
 
 }
 
@@ -80,20 +100,24 @@
 
 .circle {
     animation: imgAnimation 1.5s infinite linear;
+    animation-iteration-count: 1;
 }
 
 @keyframes imgAnimation {
     0% {
         transform: rotate(0deg);
+
     }
 
     100% {
         transform: rotate(360deg);
+
     }
 }
 
 .img-hight {
     margin-top: 25px;
+    animation-iteration-count: 1;
 }
 
 /* my code end */
