@@ -1,6 +1,4 @@
-.bg-color{
-    background-color: rgb(230, 209, 251);
-}
+
 .button-color{
     background-color: rgb(118, 21, 209);
     color: white;
@@ -11,18 +9,7 @@
 
 
 
-.img{
-    height: 300px;
-    margin-top: 10px;
-}
 
-
-
-/* .img:hover{
-    transform:scale(0,0);
-    transition: 4s;
-    animation-iteration-count: infinite;
-} */
 
 .card1{
     border: 0px solid rgb(68, 64, 64);
@@ -35,72 +22,25 @@
     display: flex;
     flex-direction: row;
 }
-.text{
-   
-    height: 700px;
-    width: 100%;
-    z-index: 100px;
-    
-background-size: cover;
 
-}
 .container{
     position: relative;
+}
+.cards{
+    margin-top: 300px;
 }
 .script{
     display: flex;
     text-align: center;
 position: absolute;
-font-size: 90px;
-color: white ;
-bottom: 270px;
-left: 300px;
+font-size: 100px;
+color: black ;
+/* bottom: 270px; */
+left: 220px;
 
 
 }
 
 
 
-
-/* animation */
-
-.content {
-    margin: 0;
-    padding: 0;
-    animation: effect 3s linear infinite;
-}
-
-section {
-    width: 100%;
-    height: 100vh;
-}
-
-.position {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 3em;
-}
-
-
-
-@keyframes effect {
-    0% {
-        background: linear-gradient(#c8a766, #81fa81);
-    }
-
-    50% {
-        background: linear-gradient(#9882d6, #1072cf);
-    }
-
-    100% {
-        background: linear-gradient(#efb279, #df5017);
-    }
-}
-
-
-
-
-    
 
