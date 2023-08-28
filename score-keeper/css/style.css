@@ -29,3 +29,47 @@ text-decoration: none;
    height: 400px; 
    
 }
+
+/* new cards  */
+
+.update-btn button {
+    background-color: blueviolet;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 2px;
+    width: 120px;
+    font-size: 20px;
+}
+
+.heading {
+    font-size: 40px;
+    background-color: blueviolet;
+    color: white;
+    padding: 10px;
+    border-radius: 5px 5px 0 0;
+}
+
+.team-vs {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+}
+
+.team-vs h1 {
+    font-size: 100px;
+    color: blueviolet;
+}
+
+@media screen and (max-width:600px) {
+    .update-btn button {
+        width: 88px;
+    }
+
+    .team-vs h1 {
+        font-size: 41px;
+        margin: 10px;
+    }
+}
