@@ -8,6 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
         <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./product-galary/product.css" />
 </head>
 
 <body>
@@ -57,11 +58,11 @@
     <div class="score-cards">
         <div class="container">
             <div class="row">
-                <div class="col-md-3">
-                    <div class="card">
-                        <div class="card-img">
-                        <img src="./image/cricket.jpg" class="card-img-top" alt="...">
-                        </div>
+                <div class="col-md-3 height">
+                    <div class="card w-100 h-100">
+                        
+                        <img src="./image/cricket.jpg" class="card-img-top h-50 w-100 img-fluid" alt="...">
+                       
                         <div class="card-body">
                             <h5 class="card-title">Recent Cricket Score</h5>
                             <p class="card-text">Live cricket scores - IRE vs IND 2023 live scores, The Hundred 2023 Cricket</p>
@@ -76,9 +77,9 @@
                     </div>
                 </div>
 
-                <div class="col-md-3">
-                    <div class="card">
-                        <img src="./image/football.jpg" class="card-img-top" alt="...">
+                <div class="col-md-3 height" >
+                    <div class="card w-100 h-100">
+                        <img src="./image/football.jpg" class="card-img-top img-fluid" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Recent Football Score</h5>
                             <p class="card-text">Football Live Scores, Latest Football Results - ISL, I-League, EPLt.</p>
@@ -93,11 +94,11 @@
                     </div>
                 </div>
 
-                <div class="col-md-3">
-                    <div class="card">
-                        <div class="card-img">
-                            <img src="./image/Badminton_-Scoring-System.jpg" class="card-img-top" alt="...">
-                        </div>
+                <div class="col-md-3 height">
+                    <div class="card w-100 h-100">
+                       
+                            <img src="./image/Badminton_-Scoring-System.jpg" class="card-img-top h-50 img-fluid" alt="...">
+                        
                         
                         <div class="card-body">
                             <h5 class="card-title">Recent Badminton Score</h5>
@@ -112,12 +113,31 @@
                         </div>
                     </div>
                 </div>
+                <div class="col-md-3 height">
+                  <div class="card w-100 h-100">
+                     
+                          <img src="./image/tennis.webp" class="card-img-top h-50 img-fluid" alt="...">
+                      
+                      
+                      <div class="card-body">
+                          <h5 class="card-title">Recent tennis Score</h5>
+                          <p class="card-text">Tennis Live Scores, Tennis Results, Tennis Today, ATP, WTA .</p>
+                         
+                          <div class="score-btn d-flex justify-content-between">
+                              <a href="#" class=" btn-properties">Update Score</a>
+                              <button type="button" class=" btn-properties" onclick="decreaseScore('3')">-</button>
+                              <span id="score2" class=" btn-properties">1</span>
+                              <button type="button" class=" btn-properties" onclick="increaseScore('3')">+</button> 
+                          </div>
+                      </div>
+                  </div>
+              </div>
 
-                <div class="col-md-3">
-                    <div class="card">
-                        <div class="card-img">
-                        <img src="./image/tennis.webp" class="card-img-top" alt="...">
-                        </div>
+                <!-- <div class="col-md-3">
+                    <div class="card w-100 h-100">
+                        
+                        <img src="./image/sport-news-with-camera-.avif" class="card-img-top h-50 img-fluid" alt="...">
+                      
                         <div class="card-body">
                             <h5 class="card-title">Recent Tennis Score</h5>
                             <p class="card-text">Tennis Live Scores, Tennis Results, Tennis Today, ATP, WTA .</p>
@@ -130,11 +150,42 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
         
     </div>
+
+    <footer class="button-color mt-5">
+        <div class="container text-light col-md-6">
+          <h1 class="text-center">Welcome To Our JavaScript Projects...!</h1><br/>
+          <div class="row">
+    
+            <div class="  col-md-8 ">
+              <!-- <h5 class=" fs-4">JavaScript Projects </h5> -->
+              <a href="./index.html" style="text-decoration: none; display:block; color: white;">Home</a>
+              <a href="./dice-roller/index.html" style="text-decoration: none; display:block; color: white;">Dice 
+            roller</a>
+              <a href="./bulb-on-off/index.html" style="text-decoration: none; display:block; color: white;">Bulb Toggler</a>
+              <a href="./bmi/index.html" style="text-decoration: none; display:block; color: white;">BMI Calculator</a>
+              <a href="./product-galary/index.html" style="text-decoration: none; display:block; color: white;">Product Galary</a>
+              <a href="./score-keeper/index.html" style="text-decoration: none; display:block; color: white;">Score keeper</a>
+            </div>
+    
+            <div class=" col-md-4">
+              <h5 class=" fs-4">Contact Us</h5>
+              <pre><a href="tel:+919373814613" style="text-decoration: none; display:block; color: white; "><i class="fa-solid fa-phone-volume fs-2"></i> +918262945593</a></pre>
+              <a href="mailto:prajaktamhase8@gmail.com" style="text-decoration: none; display:block; color: white;"><i
+                  class="fa-solid fa-envelope "></i>
+                prajaktamhase8@gmail.com</a>
+              <br>
+              <!-- <input type="tel"> -->
+              <!-- <span>Click to know our team</span><br>
+              <a href="./pages/aboutus.html" style="text-decoration: none; display:block; color: white;">About Us</a>
+            </div> -->
+          </div>
+          <div>
+      </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
