@@ -5,7 +5,7 @@
 <img src="./img/Screenshot (226).png" height=200px><br><br/>
 <img src="./img/Screenshot (227).png" height=200px><br><br/>
 
-Contributors<br/>
+Contributors<br/><br/>
 Prajkta Mhase
 <h5>Index page</h5>
 <h5> Product Galary</h5><br/><br/>
