@@ -1,5 +1,5 @@
-a{
-text-decoration: none;
+a {
+    text-decoration: none;
 }
 
 .btn-properties {
@@ -25,9 +25,9 @@ text-decoration: none;
     flex-wrap: wrap;
     width: 100%;
 } */
-.height{
-   height: 400px; 
-   
+.height {
+    height: 400px;
+
 }
 
 /* new cards  */
@@ -63,6 +63,11 @@ text-decoration: none;
     color: blueviolet;
 }
 
+.footer1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
 @media screen and (max-width:600px) {
     .update-btn button {
         width: 88px;
@@ -72,4 +77,14 @@ text-decoration: none;
         font-size: 41px;
         margin: 10px;
     }
+}
+
+
+
+@media screen and (max-width:600px) {
+    .footer1 {
+        display: flex;
+        flex-direction: column;
+    }
+
 }
