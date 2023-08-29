@@ -4,15 +4,31 @@
 <head>
     <title>Dice roller</title>
     <link rel="stylesheet" href="dice.css" />
+    <link rel="stylesheet" href="./../product-galary/index.html" />
+    <style>
+    .footer1{
+        display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+      }
+            @media screen and (max-width:600px)
+             {
+              .footer1{
+                display: flex;
+                flex-direction: column;
+              }
+              
+            }
+          </style>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 </head>
 
 <body>
     <!-- nav bar start -->
-    <nav class="navbar navbar-expand-lg bg-body-secondary text-center mb-4 py-3">
+    <nav class="navbar navbar-expand-lg bg-body-secondary text-center mb-4 py-3 bg-color: blueviolet;">
         <div class="container ">
-            <a class="navbar-brand mx-sm-5 fw-bold" href="#" style="margin-right: 50px; color: blueviolet;">content</a>
+            <a class="navbar-brand mx-sm-5 fw-bold" href="#" style="margin-right: 50px; color: blueviolet;">Mini Utility Project</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
                 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -21,7 +37,7 @@
                 <ul class="navbar-nav">
                     <li class="nav-item me-xxl-5">
                         <a class="nav-link active fw-bold" aria-current="page" href="./../score-keeper/index.html"
-                            style="margin: 0 50px; color: blueviolet; ">Score Keeper</a>
+                            style="margin: 0 5px; color: blueviolet; ">Score Keeper</a>
 
                     </li>
                     <li class="nav-item me-xxl-5">
@@ -58,13 +74,13 @@
 
     <div class="row ">
 
-        <div class="col-6 col-sm-12 roll-center border-color card-box">
+        <div class="col-6 col-sm-12 roll-center border-color card-box mt-4">
             <img src="./img/dice-casino.png" id="diceimgchenges" style="height: 220px;" class="img-margin">
             <button type="button" onclick="diceroller() " class="btn-onclick button-bg">
                 Roller</button>
         </div>
         <!-- <div class="col-"></div> -->
-        <div class="col-6 col-sm-12 roll-center border-color card-box">
+        <div class="col-6 col-sm-12 roll-center border-color card-box mt-4">
             <img src="./img/dice-casino.png" id="diceimgchenges2" style="height: 220px;" class="img-margin">
             <button type="button" onclick="diceroller2()" class="btn-onclick button-bg "
                 onmouseover="circle">Roller</button>
@@ -173,33 +189,24 @@
 
 
     <!-- footer -->
-    <footer class="button-color mt-5">
-        <div class="container text-light col-md-6">
-            <div class="row">
-                <div class="  col-md-8 ">
-                    <a href="./index.html" style="text-decoration: none; display:block; color: white;">Home</a>
-                    <a href="./dice-roller/index.html" style="text-decoration: none; display:block; color: white;">Dice
-                        roller</a>
-                    <a href="./bulb-on-off/index.html" style="text-decoration: none; display:block; color: white;">Bulb
-                        Toggler</a>
-                    <a href="./bmi/index.html" style="text-decoration: none; display:block; color: white;">BMI
-                        Calculator</a>
-                    <a href="./product-galary/index.html"
-                        style="text-decoration: none; display:block; color: white;">Product Galary</a>
-                    <a href="./score-keeper/index.html"
-                        style="text-decoration: none; display:block; color: white;">Score keeper</a>
-                </div>
-                <div class=" col-md-4">
-                    <h5 class=" fs-4">Contact Us</h5>
-                    <pre><a href="tel:+919373814613" style="text-decoration: none; display:block; color: white; "><i class="fa-solid fa-phone-volume fs-2"></i> +918262945593</a></pre>
-                    <a href="mailto:prajaktamhase8@gmail.com"
-                        style="text-decoration: none; display:block; color: white;"><i
-                            class="fa-solid fa-envelope "></i>
-                        prajaktamhase8@gmail.com</a>
-                    <br>
-                </div>
-                <div>
-    </footer>
+    <footer class="button-color mt-5"   style="background-color: #21D4FD;
+  background-image: linear-gradient(19deg, #5f5af8 0%, #B721FF 100%)";
+  ;
+  >
+    <div>
+      <h1 class="text-center pt-4 text-light">Thank You For Visiting JavaScript Projects...!</h1><br/>
+      <div class="text-light footer1 ">
+        
+        <a href="./../score-keeper/index.html" class="text-decoration-none" > <li class="link ms-4 fs-4 text-light">Score Keeper</li></a>
+      <a href="./../diceroller/index.html" target="_blank" class="text-decoration-none" >  <li class="link ms-4 fs-4 text-light ">Dice Roller</li></a>
+      <a href="./index.html" target="_blank " class="text-decoration-none">  <li class="link ms-4 fs-4 text-light">BMI</li></a>
+        <a href="./../bulb-on-off/index.html" class="text-decoration-none" > <li class="link ms-4 fs-4 text-light">Bulb On-Off</li></a>
+      <a href="./../product-galary/index.html" class="text-decoration-none" >   <li class="link ms-4 fs-4 text-light text-decoration-none">Product Gallary</li></a><br>
+          <br><br><br>
+     
+      </div>
+       </div>
+      </footer>
     <!-- footer end -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
