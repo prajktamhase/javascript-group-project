@@ -14,3 +14,17 @@
     color: rgb(202, 16, 249) !important;
 }
 
+.footer1{
+      display: flex;
+              flex-direction: row;
+              justify-content: space-around;
+    }
+          @media screen and (max-width:600px)
+           {
+            .footer1{
+              display: flex;
+              flex-direction: column;
+            }
+            
+          }
+
