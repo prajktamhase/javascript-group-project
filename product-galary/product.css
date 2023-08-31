@@ -82,6 +82,12 @@ section {
         background: linear-gradient(#efb279, #df5017);
     }
 }
+@media screen and (max-width:600px) {
+    .heading1{
+        font-size: 32px;
+       
+    }
+}
 
 
 
